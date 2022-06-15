@@ -32,15 +32,15 @@ public class demoAutomation {
 		
 		System.out.println("The Page title is : " + driver.getTitle());
 		
-	    //Counting the number of links and printing them along with the text
+	        //Counting the number of links and printing them along with the text
 		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
-	    System.out.println("The number of links in this page is " + links.size());
+	        System.out.println("The number of links in this page is " + links.size());
 	    
-	    for(int i=0; i<links.size(); i++) {
+	        for(int i=0; i<links.size(); i++) {
 	    	
 	    	System.out.println(links.get(i).getText());
-	    }
+	       }
 	
 	      
 		Thread.sleep(3000);
@@ -57,11 +57,11 @@ public class demoAutomation {
 		
 		//Checking the title of the page
 		
-	    System.out.println("The Page title is : " + driver.getTitle());
+	        System.out.println("The Page title is : " + driver.getTitle());
 				
-		 //Counting the number of links and printing them along with the text
+	        //Counting the number of links and printing them along with the text
 				
-		List<WebElement> links1 = driver.findElements(By.tagName("a"));
+	        List<WebElement> links1 = driver.findElements(By.tagName("a"));
 		System.out.println("The number of links in this page is " + links1.size());
 			    
 			    for(int i=0; i<links1.size(); i++) {
@@ -74,9 +74,9 @@ public class demoAutomation {
 		
 		driver.findElement(By.xpath("//tbody/tr[5]/td[1]/input[1]")).click();
 		
-        //Checking the title of the page
+                //Checking the title of the page
 		
-	    System.out.println("The Page title is : " + driver.getTitle());
+	        System.out.println("The Page title is : " + driver.getTitle());
 				
 		//Counting the number of links and printing them along with the text
 				
@@ -88,11 +88,11 @@ public class demoAutomation {
 			    	System.out.println(links2.get(i).getText());
 			    }
 		
-        //Reservation of flight   
+                //Reservation of flight   
 			    
 		Thread.sleep(2000);
 			    
-	    driver.findElement(By.xpath("//input[@id='inputName']")).sendKeys("Manas Amancharla");
+	        driver.findElement(By.xpath("//input[@id='inputName']")).sendKeys("Manas Amancharla");
 		
 		Thread.sleep(1000);
 		
@@ -138,21 +138,21 @@ public class demoAutomation {
 		
 		driver.findElement(By.xpath("//input[@value='Purchase Flight']")).click();
 		
-        //Checking the title of the page
+                //Checking the title of the page
 		
-	    System.out.println("The Page title is : " + driver.getTitle());
+	        System.out.println("The Page title is : " + driver.getTitle());
 	    
-	    Thread.sleep(4000);
+	        Thread.sleep(4000);
 	    
-	    js.executeScript("window.scrollBy(0,1000)");
+	        js.executeScript("window.scrollBy(0,1000)");
+	     
+	        //Reservation made
 	    
-	    //Reservation made
+	        System.out.println("Reservation made");
 	    
-	    System.out.println("Reservation made");
+	        Thread.sleep(60000);
 	    
-	    Thread.sleep(60000);
-	    
-	    driver.close();
+	        driver.close();
 	    	
 			    
 	}

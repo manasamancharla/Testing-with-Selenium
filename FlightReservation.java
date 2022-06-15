@@ -37,10 +37,11 @@ public class demoAutomation {
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 	        System.out.println("The number of links in this page is " + links.size());
 	    
-	        for(int i=0; i<links.size(); i++) {
+	                  for(int i=0; i<links.size(); i++) {
 	    	
-	    	System.out.println(links.get(i).getText());
-	       }
+	    	             System.out.println(links.get(i).getText());
+	                
+			  }
 	
 	      
 		Thread.sleep(3000);

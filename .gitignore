@@ -1,0 +1,49 @@
+# IntelliJ IDEA / Eclipse / VS Code project files
+.idea/
+.vscode/
+*.iml
+*.class
+*.log
+
+# Ignore Eclipse project files
+.classpath
+.project
+.settings/
+
+# Java build directories
+bin/
+target/
+out/
+
+# Maven / Gradle
+.mvn/
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Dependencies (avoid committing downloaded libraries)
+*.jar
+*.war
+*.ear
+lib/
+dependency-reduced-pom.xml
+
+# Test Reports
+surefire-reports/
+test-output/
+cucumber-reports/
+
+# Logs & Temp files
+*.log
+*.tmp
+hs_err_pid*
+*.swp
+.DS_Store
+
+# Selenium & WebDriver
+chromedriver.log
+geckodriver.log
+selenium-server.log
+
+# Environment Variables (if any)
+.env
